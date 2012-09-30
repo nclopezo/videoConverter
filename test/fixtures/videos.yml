@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  url_original: MyString
+  url_converted: MyString
+  status: MyString
+
+two:
+  name: MyString
+  url_original: MyString
+  url_converted: MyString
+  status: MyString
