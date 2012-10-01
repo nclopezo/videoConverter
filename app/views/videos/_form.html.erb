@@ -11,22 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :url_original %><br />
-    <%= f.text_field :url_original %>
-  </div>
-  <div class="field">
-    <%= f.label :url_converted %><br />
-    <%= f.text_field :url_converted %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </div>
+
+    <div class="field">
+      <%= f.label "file" %><br />
+      <%= f.file_field :avatar %>
+    </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

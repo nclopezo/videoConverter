@@ -32,6 +32,13 @@
                   <li><%= link_to "Register", new_user_registration_path %></li>
               <% end %>
 
+
+              <!-- botones para los videos -->
+              <% if user_signed_in? %>
+                  <li><%= link_to "My Videos" , videos_path %></li>
+
+              <% end %>
+
             </ul>
           </nav>
         </div>

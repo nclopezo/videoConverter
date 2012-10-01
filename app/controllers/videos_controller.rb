@@ -1,8 +1,11 @@
 class VideosController < ApplicationController
+
+  before_filter :authenticate_user!
+
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    @videos = current_user.videos
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +16,7 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
-    @video = Video.find(params[:id])
+    @video = current_user.videos.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,13 +37,23 @@ class VideosController < ApplicationController
 
   # GET /videos/1/edit
   def edit
-    @video = Video.find(params[:id])
+    @video = current_user.videos.find(params[:id])
   end
 
   # POST /videos
   # POST /videos.json
   def create
     @video = Video.new(params[:video])
+
+    @video.user_id = current_user.id
+
+    @video.name = @video.avatar.filename.to_s
+    @video.url_original = @video.avatar.store_dir.to_s
+    @video.status = VIDEOS_STATUSES[:PENDING]
+
+    #@cloud_file.name = @cloud_file.avatar.filename.to_s
+
+    #@cloud_file.size = @cloud_file.avatar.file.size
 
     respond_to do |format|
       if @video.save
