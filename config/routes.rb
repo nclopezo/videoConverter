@@ -1,7 +1,18 @@
 VideoConverter::Application.routes.draw do
+  devise_for :users
+
+  get "static_pages/home"
+
+  get "static_pages/help"
+
+  match "static_pages/home" => "static_pages#home", :as => "home"
+
+
   resources :videos
 
   resources :users
+
+  root :to => "static_pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

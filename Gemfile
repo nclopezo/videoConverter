@@ -27,6 +27,10 @@ end
 
 gem 'jquery-rails'
 
+gem 'bootstrap-sass'
+
+gem "devise", "~> 2.1.2"
+
 
 
 # To use ActiveModel has_secure_password
