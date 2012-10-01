@@ -35,6 +35,8 @@ gem 'carrierwave'
 
 gem "fog", "~> 1.3.1"
 
+gem 'iron_mq'
+
 
 
 # To use ActiveModel has_secure_password

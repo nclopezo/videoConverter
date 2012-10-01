@@ -22,82 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="videos_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="videos_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="33" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="2" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/videos/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="2" selection-start="342" selection-end="342" vertical-scroll-proportion="-7.9130435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="45" selection-end="45" vertical-scroll-proportion="-1.2173913">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/videos/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="82" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carrierwave.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="66" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.9206349">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/general.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+            <state line="59" column="38" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.33116883">
               <folding />
             </state>
           </provider>
@@ -120,15 +48,15 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20121001005427_add_avatar_to_users.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/videos/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/videos/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
         <option value="$PROJECT_DIR$/config/initializers/general.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
       </list>
     </option>
   </component>
@@ -763,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="17" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="20" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
@@ -779,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+        <state line="14" column="24" selection-start="487" selection-end="487" vertical-scroll-proportion="0.42424244">
           <folding />
         </state>
       </provider>
@@ -819,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="82" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
@@ -835,7 +749,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="66" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.9206349">
+        <state line="62" column="66" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="693" selection-end="693" vertical-scroll-proportion="0.28787878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="38" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.33116883">
           <folding />
         </state>
       </provider>

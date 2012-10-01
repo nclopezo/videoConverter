@@ -51,6 +51,22 @@ class VideosController < ApplicationController
     @video.url_original = @video.avatar.store_dir.to_s
     @video.status = VIDEOS_STATUSES[:PENDING]
 
+    # ahora lo voy a poner en la cola
+
+    # Create an IronMQ::Client object
+    @ironmq = IronMQ::Client.new()
+
+    # Get a queue (if it doesn't exist, it will be created when you first post a message
+    @queue = @ironmq.queue("my_queue")
+
+    # Post a message
+    @queue.post("hello world!")
+
+# Get a message
+    @video.status= @queue.get()
+
+
+
     #@cloud_file.name = @cloud_file.avatar.filename.to_s
 
     #@cloud_file.size = @cloud_file.avatar.file.size
