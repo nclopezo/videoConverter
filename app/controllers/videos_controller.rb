@@ -60,10 +60,11 @@ class VideosController < ApplicationController
     @queue = @ironmq.queue("my_queue")
 
     # Post a message
-    @queue.post("hello world!")
+    @queue.post('CONVERT:'+@video.id)
 
 # Get a message
-    @video.status= @queue.get()
+    #ok
+    #@video.status= @queue.get()
 
 
 
