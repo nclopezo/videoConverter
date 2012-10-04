@@ -11,7 +11,7 @@ class Video < ActiveRecord::Base
   DEVELOPMENT_BUCKET_URL =AMAZON_S3_BASE_URL + DEVELOPMENT_BUCKET
 
 
-  attr_accessible :name, :status, :url_converted, :url_original, :user_id, :avatar
+  attr_accessible :name, :status, :url_converted, :url_original, :user_id, :avatar, :job_id
 
   mount_uploader :avatar, AvatarUploader
 
