@@ -37,7 +37,9 @@ gem "fog", "~> 1.3.1"
 
 gem 'iron_mq'
 
+gem 'delayed_job_active_record'
 
+gem 'zencoder'
 
 
 

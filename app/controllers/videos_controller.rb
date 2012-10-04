@@ -48,19 +48,7 @@ class VideosController < ApplicationController
     @video.user_id = current_user.id
 
     @video.name = @video.avatar.filename.to_s
-    @video.url_original = @video.avatar.store_dir.to_s
-    @video.status = VIDEOS_STATUSES[:PENDING]
 
-    # ahora lo voy a poner en la cola
-
-    # Create an IronMQ::Client object
-    @ironmq = IronMQ::Client.new()
-
-    # Get a queue (if it doesn't exist, it will be created when you first post a message
-    @queue = @ironmq.queue("my_queue")
-
-    # Post a message
-    @queue.post('CONVERT:'+@video.name + 'USER:'+@video.user.id.to_s)
 
 # Get a message
     #ok
@@ -74,6 +62,40 @@ class VideosController < ApplicationController
 
     respond_to do |format|
       if @video.save
+
+        ### primero toca guardarlo para que le den un id
+
+        @video.url_original = @video.avatar.store_dir.to_s
+        @video.url_original = @video.complete_url
+        @video.status = VIDEOS_STATUSES[:PENDING]
+
+        # ahora lo voy a poner en la cola
+
+        # Create an IronMQ::Client object
+        #@ironmq = IronMQ::Client.new()
+
+        # Get a queue (if it doesn't exist, it will be created when you first post a message
+        #@queue = @ironmq.queue("videosConv")
+
+        # Post a message
+        #@queue.post('CONVERT:'+@video.id.to_s+ "," + 'USER:'+@video.user.id.to_s)
+
+        # lo voy a mandar a zencoder
+
+        @job =  Zencoder::Job.create({:input => @video.url_original, :api_key =>ZENCODER_API_KEY}, :output => [{:public=> 1}] )
+
+        @video.job_id = @job.body['id']
+
+        @job_url = @job.body["outputs"][0]["url"]
+
+        @video.url_converted = @job_url
+
+
+        #@video.delay.checkJobStatus
+
+        @video.save
+
+
         format.html { redirect_to @video, notice: 'Video was successfully created.' }
         format.json { render json: @video, status: :created, location: @video }
       else

@@ -42,6 +42,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
+    delayed_job (3.0.3)
+      activesupport (~> 3.0)
+    delayed_job_active_record (0.3.3)
+      activerecord (>= 2.1.0, < 4)
+      delayed_job (~> 3.0)
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -141,6 +146,8 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    zencoder (2.4.3)
+      multi_json
 
 PLATFORMS
   ruby
@@ -149,6 +156,7 @@ DEPENDENCIES
   bootstrap-sass
   carrierwave
   coffee-rails (~> 3.2.1)
+  delayed_job_active_record
   devise (~> 2.1.2)
   fog (~> 1.3.1)
   iron_mq
@@ -158,3 +166,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)
+  zencoder

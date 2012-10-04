@@ -1,13 +1,22 @@
 <div class="center hero-unit">
-<h1>Welcome to the Sample App</h1>
+<h1>Welcome to the Video Converter</h1>
 
 <h2>
-  This is the home page for the
-  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
+
+
+  <% if user_signed_in? %>
+
+      Welcome <%= current_user.email %>
+
+      <li><%= link_to "Logout ", destroy_user_session_path , :method => :delete%></li>
+  <% else %>
+      Please  <%= link_to "Sign in", new_user_session_path %>, or
+      <%= link_to "Sign up", new_user_registration_path %> if you don't have already an account.
+  <% end %>
+
 </h2>
 
-<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
